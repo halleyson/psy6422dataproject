@@ -1,0 +1,7 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+# Data cleaning
+With the use of R

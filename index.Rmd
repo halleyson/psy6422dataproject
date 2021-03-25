@@ -1,0 +1,27 @@
+--- 
+title: "PSY6422 Project"
+subtitle: 'Anime reconmandation engine based on the data from anime-planet'
+author: "Halleyson Li"
+date: "`r Sys.Date()`"
+output:
+  bookdown::pdf_document: 
+  latex_engine: xelatex
+biblio-style: apalike
+link-citations: yes
+linkcolor: blue
+frontsize: 12pt
+site: bookdown::bookdown_site
+knit: "bookdown::render_book"
+---
+\newpage
+
+# Overview
+
+Based on the data scraped from *anime-planet* on June 15, 2020.
+Uploaded by Alan Mathew on [Kaggle](https://www.kaggle.com/alancmathew/anime-dataset).
+
+
+## Project motivation
+
+## Project Aims
+
