@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Part 3 Animated graph | PSY6422 Project</title>
+  <meta name="description" content="Part 3 Animated graph | PSY6422 Project" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Part 3 Animated graph | PSY6422 Project" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Part 3 Animated graph | PSY6422 Project" />
+  
+  
+  
+
+<meta name="author" content="Halleyson Li" />
+
+
+<meta name="date" content="2021-05-24" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="basic-look-at-the-data.html"/>
+<link rel="next" href="discussion.html"/>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Psy6422 project: Prolific anime studios's prodction and rating </a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Overview</a>
+<ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#project-motivation"><i class="fa fa-check"></i><b>0.1</b> Project motivation</a></li>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#project-aims"><i class="fa fa-check"></i><b>0.2</b> Project Aims</a></li>
+<li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#package-requirement"><i class="fa fa-check"></i><b>0.3</b> Package requirement</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="understanding-the-data.html"><a href="understanding-the-data.html"><i class="fa fa-check"></i><b>1</b> Understanding the data</a></li>
+<li class="chapter" data-level="2" data-path="basic-look-at-the-data.html"><a href="basic-look-at-the-data.html"><i class="fa fa-check"></i><b>2</b> Basic look at the data</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="basic-look-at-the-data.html"><a href="basic-look-at-the-data.html#first-ggplot-of-the-data"><i class="fa fa-check"></i><b>2.1</b> First ggplot of the data</a></li>
+<li class="chapter" data-level="2.2" data-path="basic-look-at-the-data.html"><a href="basic-look-at-the-data.html#second-ggplot-of-the-data"><i class="fa fa-check"></i><b>2.2</b> Second ggplot of the data</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="animated-graph.html"><a href="animated-graph.html"><i class="fa fa-check"></i><b>3</b> Animated graph</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="animated-graph.html"><a href="animated-graph.html#racing-plot"><i class="fa fa-check"></i><b>3.1</b> Racing plot</a></li>
+<li class="chapter" data-level="3.2" data-path="animated-graph.html"><a href="animated-graph.html#racing-plot-2"><i class="fa fa-check"></i><b>3.2</b> Racing plot 2</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="discussion.html"><a href="discussion.html"><i class="fa fa-check"></i><b>4</b> Discussion</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="discussion.html"><a href="discussion.html#further-resaerch-suggestion"><i class="fa fa-check"></i><b>4.1</b> Further resaerch suggestion</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="summary.html"><a href="summary.html"><i class="fa fa-check"></i><b>5</b> Summary</a></li>
+<li class="divider"></li>
+<li><a href="./">Psy6422 project by Halleyson Li</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">PSY6422 Project</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="animated-graph" class="section level1" number="3">
+<h1><span class="header-section-number">Part 3</span> Animated graph</h1>
+<p>##Data cleaning</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="animated-graph.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(studiotop50<span class="sc">$</span>rating)</span>
+<span id="cb12-2"><a href="animated-graph.html#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="animated-graph.html#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-4"><a href="animated-graph.html#cb12-4" aria-hidden="true" tabindex="-1"></a>studiotop37r <span class="ot">&lt;-</span> studiotop50 <span class="sc">%&gt;%</span> </span>
+<span id="cb12-5"><a href="animated-graph.html#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(rating)) <span class="sc">%&gt;%</span> </span>
+<span id="cb12-6"><a href="animated-graph.html#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="co">#after looking at the code, find out how many is below the 2.75 lower quartile</span></span>
+<span id="cb12-7"><a href="animated-graph.html#cb12-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice</span> (<span class="dv">1</span><span class="sc">:</span><span class="dv">37</span>)</span>
+<span id="cb12-8"><a href="animated-graph.html#cb12-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-9"><a href="animated-graph.html#cb12-9" aria-hidden="true" tabindex="-1"></a>selectstudio <span class="ot">&lt;-</span> anime1 <span class="sc">%&gt;%</span> <span class="fu">select</span>(title, startYr, studios, rating)</span>
+<span id="cb12-10"><a href="animated-graph.html#cb12-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-11"><a href="animated-graph.html#cb12-11" aria-hidden="true" tabindex="-1"></a>selectstudioall <span class="ot">&lt;-</span> <span class="fu">merge</span>(studiotop37r, selectstudio,<span class="at">by =</span> <span class="st">&quot;studios&quot;</span>, <span class="at">all =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb12-12"><a href="animated-graph.html#cb12-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-13"><a href="animated-graph.html#cb12-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-14"><a href="animated-graph.html#cb12-14" aria-hidden="true" tabindex="-1"></a>selectstudioclean <span class="ot">&lt;-</span> <span class="fu">na.omit</span>(selectstudioall)</span>
+<span id="cb12-15"><a href="animated-graph.html#cb12-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-16"><a href="animated-graph.html#cb12-16" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(selectstudioclean) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;studios&quot;</span>, <span class="st">&quot;production&quot;</span>,<span class="st">&quot;avg_rating&quot;</span>,<span class="st">&quot;title&quot;</span>,<span class="st">&quot;startyr&quot;</span>,<span class="st">&quot;rating&quot;</span>)</span>
+<span id="cb12-17"><a href="animated-graph.html#cb12-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-18"><a href="animated-graph.html#cb12-18" aria-hidden="true" tabindex="-1"></a>newavg <span class="ot">&lt;-</span> selectstudioclean <span class="sc">%&gt;%</span> <span class="fu">select</span>(studios, rating, production, avg_rating,startyr)</span>
+<span id="cb12-19"><a href="animated-graph.html#cb12-19" aria-hidden="true" tabindex="-1"></a>newavg1 <span class="ot">&lt;-</span> <span class="fu">aggregate</span>(newavg[, <span class="dv">2</span><span class="sc">:</span><span class="dv">4</span>], <span class="fu">list</span>(newavg<span class="sc">$</span>studios, newavg<span class="sc">$</span>startyr), mean)</span>
+<span id="cb12-20"><a href="animated-graph.html#cb12-20" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(newavg1) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;studios&quot;</span>,<span class="st">&quot;startyr&quot;</span>,<span class="st">&quot;rating&quot;</span>, <span class="st">&quot;production&quot;</span>,<span class="st">&quot;avg_rating&quot;</span>)</span></code></pre></div>
+<div id="racing-plot" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Racing plot</h2>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="animated-graph.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(selectstudioclean)</span></code></pre></div>
+<pre><code>##    studios            production      avg_rating       title          
+##  Length:4857        Min.   : 42.0   Min.   :2.756   Length:4857       
+##  Class :character   1st Qu.: 99.0   1st Qu.:2.864   Class :character  
+##  Mode  :character   Median :229.0   Median :3.196   Mode  :character  
+##                     Mean   :265.9   Mean   :3.148                     
+##                     3rd Qu.:339.0   3rd Qu.:3.276                     
+##                     Max.   :683.0   Max.   :3.661                     
+##     startyr         rating     
+##  Min.   :1956   Min.   :0.000  
+##  1st Qu.:1999   1st Qu.:2.732  
+##  Median :2008   Median :3.322  
+##  Mean   :2005   Mean   :3.166  
+##  3rd Qu.:2014   3rd Qu.:3.852  
+##  Max.   :2022   Max.   :4.702</code></pre>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="animated-graph.html#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gganimate)</span>
+<span id="cb15-2"><a href="animated-graph.html#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-3"><a href="animated-graph.html#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-4"><a href="animated-graph.html#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(av)</span>
+<span id="cb15-5"><a href="animated-graph.html#cb15-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-6"><a href="animated-graph.html#cb15-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-7"><a href="animated-graph.html#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="co">#create ranking list</span></span>
+<span id="cb15-8"><a href="animated-graph.html#cb15-8" aria-hidden="true" tabindex="-1"></a>newavg2 <span class="ot">&lt;-</span> newavg1 <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(startyr)<span class="sc">%&gt;%</span> </span>
+<span id="cb15-9"><a href="animated-graph.html#cb15-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(startyr, <span class="sc">-</span> rating)<span class="sc">%&gt;%</span> </span>
+<span id="cb15-10"><a href="animated-graph.html#cb15-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">ranking =</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">n</span>())</span>
+<span id="cb15-11"><a href="animated-graph.html#cb15-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-12"><a href="animated-graph.html#cb15-12" aria-hidden="true" tabindex="-1"></a><span class="co">#Drop row that the year is above 2020.</span></span>
+<span id="cb15-13"><a href="animated-graph.html#cb15-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-14"><a href="animated-graph.html#cb15-14" aria-hidden="true" tabindex="-1"></a>newavg2 <span class="ot">&lt;-</span>newavg2 [<span class="sc">!</span>(newavg2<span class="sc">$</span>startyr <span class="sc">==</span> <span class="st">&quot;2021&quot;</span><span class="sc">|</span>newavg2<span class="sc">$</span>startyr <span class="sc">==</span> <span class="st">&quot;2022&quot;</span>),]</span>
+<span id="cb15-15"><a href="animated-graph.html#cb15-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-16"><a href="animated-graph.html#cb15-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-17"><a href="animated-graph.html#cb15-17" aria-hidden="true" tabindex="-1"></a>top1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(newavg2, <span class="fu">aes</span>(ranking, <span class="at">group =</span> studios, </span>
+<span id="cb15-18"><a href="animated-graph.html#cb15-18" aria-hidden="true" tabindex="-1"></a>                <span class="at">fill =</span> <span class="fu">as.factor</span>(studios), <span class="at">color =</span> <span class="fu">as.factor</span>(studios))) <span class="sc">+</span></span>
+<span id="cb15-19"><a href="animated-graph.html#cb15-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_tile</span>(<span class="fu">aes</span>(<span class="at">y =</span> rating,</span>
+<span id="cb15-20"><a href="animated-graph.html#cb15-20" aria-hidden="true" tabindex="-1"></a>                <span class="at">height =</span> rating,</span>
+<span id="cb15-21"><a href="animated-graph.html#cb15-21" aria-hidden="true" tabindex="-1"></a>                <span class="at">width =</span> <span class="fl">0.9</span>), <span class="at">alpha =</span> <span class="fl">0.8</span>, <span class="at">color =</span> <span class="cn">NA</span>) <span class="sc">+</span></span>
+<span id="cb15-22"><a href="animated-graph.html#cb15-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">y =</span> <span class="dv">0</span>, <span class="at">label =</span> <span class="fu">paste</span>(studios, <span class="st">&quot; &quot;</span>)), <span class="at">vjust =</span> <span class="fl">0.5</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>, <span class="at">size =</span> <span class="dv">6</span>, <span class="at">fontface=</span><span class="st">&quot;bold&quot;</span>) <span class="sc">+</span></span>
+<span id="cb15-23"><a href="animated-graph.html#cb15-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">y=</span>rating,<span class="at">label =</span> <span class="fu">round</span>(rating, <span class="at">digits =</span> <span class="dv">1</span>)), <span class="at">colour =</span> <span class="st">&quot;black&quot;</span>, <span class="at">hjust=</span><span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb15-24"><a href="animated-graph.html#cb15-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>(<span class="at">clip =</span> <span class="st">&quot;off&quot;</span>, <span class="at">expand =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb15-25"><a href="animated-graph.html#cb15-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span>comma) <span class="sc">+</span></span>
+<span id="cb15-26"><a href="animated-graph.html#cb15-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_reverse</span>() <span class="sc">+</span></span>
+<span id="cb15-27"><a href="animated-graph.html#cb15-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">color =</span> <span class="cn">FALSE</span>, <span class="at">fill =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb15-28"><a href="animated-graph.html#cb15-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.line=</span><span class="fu">element_blank</span>(),</span>
+<span id="cb15-29"><a href="animated-graph.html#cb15-29" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.text.x=</span><span class="fu">element_blank</span>(),</span>
+<span id="cb15-30"><a href="animated-graph.html#cb15-30" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.text.y=</span><span class="fu">element_blank</span>(),</span>
+<span id="cb15-31"><a href="animated-graph.html#cb15-31" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.ticks=</span><span class="fu">element_blank</span>(),</span>
+<span id="cb15-32"><a href="animated-graph.html#cb15-32" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.title.x=</span><span class="fu">element_blank</span>(),</span>
+<span id="cb15-33"><a href="animated-graph.html#cb15-33" aria-hidden="true" tabindex="-1"></a>         <span class="at">axis.title.y=</span><span class="fu">element_blank</span>(),</span>
+<span id="cb15-34"><a href="animated-graph.html#cb15-34" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.position=</span><span class="st">&quot;none&quot;</span>,</span>
+<span id="cb15-35"><a href="animated-graph.html#cb15-35" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.background=</span><span class="fu">element_blank</span>(),</span>
+<span id="cb15-36"><a href="animated-graph.html#cb15-36" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.border=</span><span class="fu">element_blank</span>(),</span>
+<span id="cb15-37"><a href="animated-graph.html#cb15-37" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.grid.major=</span><span class="fu">element_blank</span>(),</span>
+<span id="cb15-38"><a href="animated-graph.html#cb15-38" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.grid.minor=</span><span class="fu">element_blank</span>(),</span>
+<span id="cb15-39"><a href="animated-graph.html#cb15-39" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.grid.major.x =</span> <span class="fu">element_line</span>( <span class="at">size=</span>.<span class="dv">1</span>, <span class="at">color=</span><span class="st">&quot;grey&quot;</span> ),</span>
+<span id="cb15-40"><a href="animated-graph.html#cb15-40" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.grid.minor.x =</span> <span class="fu">element_line</span>( <span class="at">size=</span>.<span class="dv">1</span>, <span class="at">color=</span><span class="st">&quot;grey&quot;</span> ),</span>
+<span id="cb15-41"><a href="animated-graph.html#cb15-41" aria-hidden="true" tabindex="-1"></a>        <span class="at">plot.title=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">25</span>, <span class="at">hjust=</span><span class="fl">0.5</span>, <span class="at">face=</span><span class="st">&quot;bold&quot;</span>, <span class="at">colour=</span><span class="st">&quot;grey&quot;</span>, <span class="at">vjust=</span><span class="dv">1</span>),</span>
+<span id="cb15-42"><a href="animated-graph.html#cb15-42" aria-hidden="true" tabindex="-1"></a>        <span class="at">plot.subtitle=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">17</span>, <span class="at">hjust=</span><span class="fl">0.5</span>, <span class="at">face=</span><span class="st">&quot;italic&quot;</span>, <span class="at">color=</span><span class="st">&quot;grey&quot;</span>),</span>
+<span id="cb15-43"><a href="animated-graph.html#cb15-43" aria-hidden="true" tabindex="-1"></a>        <span class="at">plot.caption =</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">8</span>, <span class="at">hjust=</span><span class="fl">0.5</span>, <span class="at">face=</span><span class="st">&quot;italic&quot;</span>, <span class="at">color=</span><span class="st">&quot;grey&quot;</span>),</span>
+<span id="cb15-44"><a href="animated-graph.html#cb15-44" aria-hidden="true" tabindex="-1"></a>        <span class="at">plot.background=</span><span class="fu">element_blank</span>(),</span>
+<span id="cb15-45"><a href="animated-graph.html#cb15-45" aria-hidden="true" tabindex="-1"></a>       <span class="at">plot.margin =</span> <span class="fu">margin</span>(<span class="dv">2</span>,<span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="st">&quot;cm&quot;</span>),</span>
+<span id="cb15-46"><a href="animated-graph.html#cb15-46" aria-hidden="true" tabindex="-1"></a>       <span class="at">plot.tag.position =</span> <span class="fu">c</span> (<span class="fl">0.2</span>, <span class="dv">0</span>)) </span>
+<span id="cb15-47"><a href="animated-graph.html#cb15-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-48"><a href="animated-graph.html#cb15-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-49"><a href="animated-graph.html#cb15-49" aria-hidden="true" tabindex="-1"></a>anim <span class="ot">=</span> top1 <span class="sc">+</span> <span class="fu">transition_states</span>(startyr, <span class="at">transition_length =</span> <span class="dv">4</span>, <span class="at">state_length =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb15-50"><a href="animated-graph.html#cb15-50" aria-hidden="true" tabindex="-1"></a>  <span class="fu">view_follow</span>(<span class="at">fixed_x =</span> <span class="cn">TRUE</span>)  <span class="sc">+</span></span>
+<span id="cb15-51"><a href="animated-graph.html#cb15-51" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&#39;Studio average rating change by year : {closest_state}&#39;</span>,  </span>
+<span id="cb15-52"><a href="animated-graph.html#cb15-52" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle  =</span>  <span class="st">&quot;Top 37 Studio racing plot&quot;</span>, <span class="at">tag =</span> <span class="st">&quot;Figure3: 1958-2020 Studio&#39;s raced rating change&quot;</span>)</span>
+<span id="cb15-53"><a href="animated-graph.html#cb15-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-54"><a href="animated-graph.html#cb15-54" aria-hidden="true" tabindex="-1"></a>anime.gif <span class="ot">&lt;-</span> <span class="fu">animate</span>(anim, <span class="at">nframes =</span> <span class="dv">150</span>, <span class="at">fps =</span> <span class="fl">2.5</span>, <span class="at">width =</span> <span class="dv">1000</span>, <span class="at">height =</span> <span class="dv">1200</span>)</span>
+<span id="cb15-55"><a href="animated-graph.html#cb15-55" aria-hidden="true" tabindex="-1"></a>anime.gif</span></code></pre></div>
+<p><img src="psy6422-project_files/figure-html/unnamed-chunk-7-1.gif" /><!-- --></p>
+</div>
+<div id="racing-plot-2" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Racing plot 2</h2>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="animated-graph.html#cb16-1" aria-hidden="true" tabindex="-1"></a>topcompany <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data=</span>newavg2,<span class="fu">aes</span> (<span class="at">x =</span> studios, <span class="at">y =</span> rating, <span class="at">fill =</span> rating))<span class="sc">+</span></span>
+<span id="cb16-2"><a href="animated-graph.html#cb16-2" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb16-3"><a href="animated-graph.html#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">&#39;identity&#39;</span>,<span class="at">size =</span> <span class="dv">6</span>, <span class="at">fontface=</span><span class="st">&quot;bold&quot;</span>)<span class="sc">+</span> </span>
+<span id="cb16-4"><a href="animated-graph.html#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label=</span><span class="fu">format</span>(<span class="fu">round</span>(rating)), <span class="at">y=</span>rating, <span class="at">hjust =</span> <span class="sc">-</span><span class="dv">1</span>),</span>
+<span id="cb16-5"><a href="animated-graph.html#cb16-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">position=</span><span class="fu">position_dodge</span>(<span class="dv">1</span>)) <span class="sc">+</span> <span class="fu">coord_flip</span>()<span class="sc">+</span></span>
+<span id="cb16-6"><a href="animated-graph.html#cb16-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_gradient</span>(<span class="at">low =</span> <span class="st">&#39;grey39&#39;</span>, <span class="at">high =</span> <span class="st">&#39;cyan&#39;</span>)<span class="sc">+</span></span>
+<span id="cb16-7"><a href="animated-graph.html#cb16-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="st">&quot;rating&quot;</span>) <span class="sc">+</span> <span class="fu">theme_classic</span>()<span class="sc">+</span></span>
+<span id="cb16-8"><a href="animated-graph.html#cb16-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position=</span><span class="st">&#39;none&#39;</span>, <span class="at">axis.text.y =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">10</span>, <span class="at">face =</span> <span class="st">&quot;bold&quot;</span>),</span>
+<span id="cb16-9"><a href="animated-graph.html#cb16-9" aria-hidden="true" tabindex="-1"></a>        <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">15</span>, <span class="at">hjust =</span> <span class="dv">1</span>, <span class="at">vjust =</span> <span class="sc">-</span><span class="dv">2</span>, <span class="at">face =</span> <span class="st">&quot;bold&quot;</span>),</span>
+<span id="cb16-10"><a href="animated-graph.html#cb16-10" aria-hidden="true" tabindex="-1"></a>        <span class="at">plot.tag.position =</span> <span class="fu">c</span> (<span class="fl">0.3</span>, <span class="dv">0</span>))<span class="sc">+</span></span>
+<span id="cb16-11"><a href="animated-graph.html#cb16-11" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb16-12"><a href="animated-graph.html#cb16-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">transition_states</span>(<span class="at">states=</span>startyr, <span class="at">transition_length=</span><span class="dv">4</span>, <span class="at">state_length =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb16-13"><a href="animated-graph.html#cb16-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ease_aes</span>(<span class="st">&#39;cubic-in-out&#39;</span>) <span class="sc">+</span> <span class="fu">labs</span> (<span class="at">subtitle =</span> <span class="st">&#39;Year:{closest_state}&#39;</span>,</span>
+<span id="cb16-14"><a href="animated-graph.html#cb16-14" aria-hidden="true" tabindex="-1"></a>                                   <span class="at">tag =</span> <span class="st">&quot;Figure3: 1958-2020 Studio&#39;s rating change&quot;</span>)<span class="sc">+</span></span>
+<span id="cb16-15"><a href="animated-graph.html#cb16-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">&#39;Studio name&#39;</span>)</span>
+<span id="cb16-16"><a href="animated-graph.html#cb16-16" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb16-17"><a href="animated-graph.html#cb16-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-18"><a href="animated-graph.html#cb16-18" aria-hidden="true" tabindex="-1"></a><span class="co">#nframes = 2 x length of the showing year (startyr) other wise only show 50</span></span>
+<span id="cb16-19"><a href="animated-graph.html#cb16-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-20"><a href="animated-graph.html#cb16-20" aria-hidden="true" tabindex="-1"></a>anime1.gif <span class="ot">&lt;-</span> <span class="fu">animate</span> (topcompany, <span class="at">nframes =</span> <span class="dv">150</span>, <span class="at">fps =</span> <span class="dv">2</span>, <span class="at">width =</span> <span class="dv">600</span>, <span class="at">height =</span> <span class="dv">800</span>)</span>
+<span id="cb16-21"><a href="animated-graph.html#cb16-21" aria-hidden="true" tabindex="-1"></a>anime1.gif</span></code></pre></div>
+<p><img src="psy6422-project_files/figure-html/unnamed-chunk-8-1.gif" /><!-- --></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="basic-look-at-the-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="discussion.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["psy6422 project.pdf", "psy6422 project.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

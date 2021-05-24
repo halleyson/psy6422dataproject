@@ -2,9 +2,12 @@ project-motivation
 project-aims
 package-requirement
 understanding-the-data
-basic-interpretation
-methods
-applications
-example-one
-example-two
+basic-look-at-the-data
+first-ggplot-of-the-data
+second-ggplot-of-the-data
+animated-graph
+racing-plot
+racing-plot-2
+discussion
+further-resaerch-suggestion
 summary

@@ -15,7 +15,15 @@ knit: "bookdown::render_book"
 ---
 \newpage
 
+
 # Overview {-}
+```{r, echo=FALSE, out.width="50%", fig.align = "center", message=FALSE}
+library(here)
+Sunrisestudio <- here("sunrise.jpg")
+
+knitr::include_graphics(Sunrisestudio)
+
+```
 
 Based on the data scraped from *anime-planet* on June 15, 2020.
 Uploaded by Alan Mathew on [Kaggle](https://www.kaggle.com/alancmathew/anime-dataset).
