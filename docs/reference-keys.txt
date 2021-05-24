@@ -1,10 +1,10 @@
-overview
 project-motivation
 project-aims
-data-cleaning
+understanding-the-data
 basic-interpretation
 methods
 applications
 example-one
 example-two
 summary
+package-requirement
