@@ -58,6 +58,10 @@ studioall <- merge(studio,studiorate, by = "studios", all = TRUE)
 
 #only keep top 50 production studios
 library(data.table)
+
+#need this package to use piping
+library (dplyr)
+
 studiotop50 <- data.table(studioall, key = "production")
 studiotop50 <- studiotop50 %>% 
   arrange(desc(production)) %>% 
@@ -116,7 +120,7 @@ summary(studiotop50$rating)
 
 studiotop37r <- studiotop50 %>% 
   arrange(desc(rating)) %>% 
-##after looking at the code, find out how many is below the 2.75 lower quartile
+#after looking at the code, find out how many is below the 2.75 lower quartile
   slice (1:37)
 
 selectstudio <- anime1 %>% select(title, startYr, studios, rating)
