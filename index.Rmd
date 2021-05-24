@@ -1,6 +1,6 @@
 --- 
 title: "PSY6422 Project"
-subtitle: 'Anime reconmandation engine based on the data from anime-planet'
+subtitle: 'Prolific anime studios prodction and rating'
 author: "Halleyson Li"
 date: "`r Sys.Date()`"
 output:
@@ -15,13 +15,27 @@ knit: "bookdown::render_book"
 ---
 \newpage
 
-# Overview
+# Overview {-}
 
 Based on the data scraped from *anime-planet* on June 15, 2020.
 Uploaded by Alan Mathew on [Kaggle](https://www.kaggle.com/alancmathew/anime-dataset).
 
+The package requirement for this 
 
 ## Project motivation
 
+
 ## Project Aims
+
+
+
+## Package requirement
+
+
+
+
+
+
+
+
 

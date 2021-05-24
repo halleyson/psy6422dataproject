@@ -1,3 +1,30 @@
+--- 
+title: "PSY6422 Project"
+subtitle: 'Prolific anime studios prodction and rating'
+author: "Halleyson Li"
+date: "`r Sys.Date()`"
+output:
+  bookdown::pdf_document: 
+  latex_engine: xelatex
+biblio-style: apalike
+link-citations: yes
+linkcolor: blue
+frontsize: 12pt
+site: bookdown::bookdown_site
+knit: "bookdown::render_book"
+---
+
+# Overview {-}
+
+Placeholder
+
+
+## Project motivation
+## Project Aims
+## Package requirement
+
+<!--chapter:end:index.Rmd-->
+
 ---
 output:
   pdf_document: default
@@ -226,3 +253,42 @@ animate (topcompany, nframes = 150, fps = 2, width = 600, height = 500)
 
 
 With the use of R
+
+<!--chapter:end:01-Data-cleaning.Rmd-->
+
+# Basic interpretation
+
+This section gives a general view of the data.
+
+<!--chapter:end:02-General-interpretation.Rmd-->
+
+# Methods
+
+We describe our methods in this chapter.
+
+<!--chapter:end:03-method.Rmd-->
+
+# Applications
+
+Some _significant_ applications are demonstrated in this chapter.
+
+## Example one
+
+## Example two
+
+<!--chapter:end:04-application.Rmd-->
+
+# Summary
+
+
+
+We have finished a nice book.
+
+<!--chapter:end:05-summary.Rmd-->
+
+# Some further thoughts regarding the project {-}
+
+Of course, based on the marking 
+
+<!--chapter:end:06-Further-thoughts.Rmd-->
+
