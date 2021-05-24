@@ -1,0 +1,15 @@
+bookdown::gitbook:
+  css: style.css
+  config:
+    toc:
+      before: |
+        <li><a href="./">Psy6422 project: Prolific anime studios's prodction and rating </a></li>
+      after: |
+        <li><a href="./">Psy6422 project by Halleyson Li</a></li>
+    download: ["pdf", "epub"]
+
+bookdown::pdf_book:
+  keep_tex: yes
+
+
+
