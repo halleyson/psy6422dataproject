@@ -1,0 +1,51 @@
+This data was scraped from anime-planet on June 15, 2020.
+This data was obtained from Kaggle: https://www.kaggle.com/alancmathew/anime-dataset
+
+This dataset contains 18 columns. 
+
+Variable description 
+
+Title: title of anime
+
+mediaType:format of publication
+
+eps:number of episodes (movies are considered 1 episode)
+
+Duration: duration of episode
+
+Ongoing:whether it is ongoing
+
+startYr:year that airing started
+
+finishYr: year that airing finished
+
+sznOfRelease : season of release (Winter, Spring, Fall)
+
+Description : synopsis of plot
+
+Studios: studios responsible for creation
+
+Tags : tags, genres, etc.
+
+contenWarn: content warning
+
+Watched :number of users that completed it
+
+Watching:number of users that are watching it
+
+wantWatch : number of users that want to watch it
+
+Dropped:number of users that dropped it before completion
+
+Rating: average user rating
+
+Votes: number of votes that contribute to rating
+
+
+
+
+
+
+
+
+
