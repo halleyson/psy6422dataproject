@@ -2,6 +2,7 @@ data-origin
 project-aims
 data-cleaning
 importing-the-data
+cleaning-the-data
 graphical-look-on-the-data
 first-ggplot-of-the-data
 second-ggplot-of-the-data

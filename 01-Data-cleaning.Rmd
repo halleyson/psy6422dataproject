@@ -16,7 +16,8 @@ anime <- read_csv("raw data/anime.csv")
 #Quick check to see if the data have been successfully and correctly loaded. 
 head(anime, row = 5)
 ```
-\** For the meaning of each variable, please look at my codebook.txt*
+*For the meaning of each variable, please look at my codebook.txt*
+
 ## Cleaning the data
 
 ```{r, message=FALSE, results='hide'}
