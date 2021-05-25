@@ -1,0 +1,42 @@
+---
+title: 'PSY6422 final self-assessment'
+author: "Halleyson Li"
+date: "21/05/2020"
+output: pdf_document
+---
+
+# Marking Criteria
+
+See the Assessment criteria document for these. Roughly they are:
+
+Submit by the deadline (see Timetable) in PDF by email to ``t.stafford@sheffield.ac.uk``. Use the filename format ``surname_registrationnumber.pdf``
+
+Answer the questions in the headings below, showing evidence of engagement with the course
+
+Note: I expect and hope that all students can get full marks for this assessment. There is no word limit, but short is sweet. I suggest you write between 3 sentences and 3 paragraphs for each.
+
+# Final Self-assessment for PSY6422
+
+
+## 1. Which topic did I find most useful or interesting? Explain why
+For a noob on any computer coding, I would Like to say literally everything, but if I must pick some, 
+then it must be rmarkdown and coding principles. I am really intrigued, by the rmarkdown as it was such a good way to produce essay with really neat format, at the same time, I can do the analysis coding inside without switching to other program like SPSS. Through this, I could understand the data more thoroughly without breaking up, and for other people, it makes them easier to understand how I acquire the results from the very beginning. Coding principles is really useful as well, since it gives me the crucial keys to have some levels of understanding on other people’s code, as well as how to produce and improve my own i.e. use loop instead of doing same code repeatedly. To be honest, every lecture for this course is super interesting and useful, since coding has become one of the most important prerequisites for most of the job just like we need to know how to use Microsoft packages. 
+
+
+## 2. Which topic did I find least useful, interesting or most difficult? Explain why
+The topic I find it most difficult is ssh and command line. Even though it sounds really useful, but since for a people without any systematic learning on coding, the only thing I can do is just remember code, by the time. Sadly, I must admit that now I cannot remember anything. I really wish to move this lecture to the additional class and bring topic on gganimate or python to this time slot.
+
+
+## 3. What topics do I want to learn more about in the future? Explain why
+I want to learn more on everything, and I wish this class could last throughout the master degree, instead of just one semester, it really will consolidate my memory and giving me more confidence on r coding. I have to topics particularly want to learn more: coding principle and data wrangling. For coding principle, although I find myself super rewarding when I sort out a code during my project, but the time it takes to understand it is massive and non-systematic. Of course, most people learn coding by cracking the problem they met, but I believe with more classes on this could really help and saving the time on researching the basics. Data wrangling is super important before interpreting a data set, I wish I could have at least another lecture on this.  Data scraping is the lecture we did not have the chance to cover, but I believe it will be helpful for us to learn. Since nowadays, the social trend is turning every aspect of our life into data. 
+
+
+## 4. Please share one thing you have read and enjoyed or found useful on the topic of data management and/or visualisation
+
+I love the whole course, but the project of our final assessment is the best. It really helps to bring all the knowledge we learned together and give us the chance to beyond that. Even though it is really frustrating when the code is not working, and it happens all the time. However, after the self-search and solved the problem, it really brings my adrenaline up and that is the most enjoyable moment. One thing I find it most important during the topic is to read and understand the error message, and I wish we could have a specific lecture on the most common error message and what does it means.  
+
+
+
+
+
+
