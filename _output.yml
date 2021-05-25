@@ -3,7 +3,7 @@ bookdown::gitbook:
   config:
     toc:
       before: |
-        <li><a href="./">Psy6422 project: Prolific anime studios's prodction and rating </a></li>
+        <li><a href="./">Psy6422 project: Which Anime Studio Is The Best? An Examination Between 1958~2020 </a></li>
       after: |
         <li><a href="./">Psy6422 project by Halleyson Li</a></li>
     download: ["pdf", "epub"]

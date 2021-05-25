@@ -24,7 +24,7 @@
 <meta name="author" content="Halleyson Li" />
 
 
-<meta name="date" content="2021-05-24" />
+<meta name="date" content="2021-05-25" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
   
 
-<link rel="next" href="understanding-the-data.html"/>
+<link rel="next" href="data-cleaning.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -130,31 +130,36 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">Psy6422 project: Prolific anime studios's prodction and rating </a></li>
+<li><a href="./">Psy6422 project: Which Anime Studio Is The Best? An Examination Between 1958~2020 </a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Overview</a>
 <ul>
-<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#project-motivation"><i class="fa fa-check"></i><b>0.1</b> Project motivation</a></li>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#data-origin"><i class="fa fa-check"></i><b>0.1</b> Data Origin</a></li>
 <li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#project-aims"><i class="fa fa-check"></i><b>0.2</b> Project Aims</a></li>
-<li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#package-requirement"><i class="fa fa-check"></i><b>0.3</b> Package requirement</a></li>
+<li><a href="index.html#notes"><em>Notes</em></a></li>
 </ul></li>
-<li class="chapter" data-level="1" data-path="understanding-the-data.html"><a href="understanding-the-data.html"><i class="fa fa-check"></i><b>1</b> Understanding the data</a></li>
-<li class="chapter" data-level="2" data-path="basic-look-at-the-data.html"><a href="basic-look-at-the-data.html"><i class="fa fa-check"></i><b>2</b> Basic look at the data</a>
+<li class="chapter" data-level="1" data-path="data-cleaning.html"><a href="data-cleaning.html"><i class="fa fa-check"></i><b>1</b> Data cleaning</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="basic-look-at-the-data.html"><a href="basic-look-at-the-data.html#first-ggplot-of-the-data"><i class="fa fa-check"></i><b>2.1</b> First ggplot of the data</a></li>
-<li class="chapter" data-level="2.2" data-path="basic-look-at-the-data.html"><a href="basic-look-at-the-data.html#second-ggplot-of-the-data"><i class="fa fa-check"></i><b>2.2</b> Second ggplot of the data</a></li>
+<li class="chapter" data-level="1.1" data-path="data-cleaning.html"><a href="data-cleaning.html#importing-the-data"><i class="fa fa-check"></i><b>1.1</b> Importing the data</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="graphical-look-on-the-data.html"><a href="graphical-look-on-the-data.html"><i class="fa fa-check"></i><b>2</b> Graphical look on the data</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="graphical-look-on-the-data.html"><a href="graphical-look-on-the-data.html#first-ggplot-of-the-data"><i class="fa fa-check"></i><b>2.1</b> First ggplot of the data</a></li>
+<li class="chapter" data-level="2.2" data-path="graphical-look-on-the-data.html"><a href="graphical-look-on-the-data.html#second-ggplot-of-the-data"><i class="fa fa-check"></i><b>2.2</b> Second ggplot of the data</a></li>
+<li class="chapter" data-level="2.3" data-path="graphical-look-on-the-data.html"><a href="graphical-look-on-the-data.html#further-interprtation"><i class="fa fa-check"></i><b>2.3</b> Further Interprtation</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="animated-graph.html"><a href="animated-graph.html"><i class="fa fa-check"></i><b>3</b> Animated graph</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="animated-graph.html"><a href="animated-graph.html#racing-plot"><i class="fa fa-check"></i><b>3.1</b> Racing plot</a></li>
-<li class="chapter" data-level="3.2" data-path="animated-graph.html"><a href="animated-graph.html#racing-plot-2"><i class="fa fa-check"></i><b>3.2</b> Racing plot 2</a></li>
+<li class="chapter" data-level="3.1" data-path="animated-graph.html"><a href="animated-graph.html#data-cleaning-1"><i class="fa fa-check"></i><b>3.1</b> Data cleaning</a></li>
+<li class="chapter" data-level="3.2" data-path="animated-graph.html"><a href="animated-graph.html#racing-plot-1"><i class="fa fa-check"></i><b>3.2</b> Racing plot 1</a></li>
+<li class="chapter" data-level="3.3" data-path="animated-graph.html"><a href="animated-graph.html#racing-plot-2"><i class="fa fa-check"></i><b>3.3</b> Racing plot 2</a></li>
+<li class="chapter" data-level="3.4" data-path="animated-graph.html"><a href="animated-graph.html#racing-plot-on-best-studio"><i class="fa fa-check"></i><b>3.4</b> Racing plot on best studio</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="discussion.html"><a href="discussion.html"><i class="fa fa-check"></i><b>4</b> Discussion</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="discussion.html"><a href="discussion.html#further-resaerch-suggestion"><i class="fa fa-check"></i><b>4.1</b> Further resaerch suggestion</a></li>
+<li class="chapter" data-level="4.1" data-path="discussion.html"><a href="discussion.html#further-work-suggestion-and-thoughts"><i class="fa fa-check"></i><b>4.1</b> Further work suggestion and thoughts</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="summary.html"><a href="summary.html"><i class="fa fa-check"></i><b>5</b> Summary</a></li>
 <li class="divider"></li>
 <li><a href="./">Psy6422 project by Halleyson Li</a></li>
 
@@ -177,24 +182,38 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="header">
 <h1 class="title">PSY6422 Project</h1>
-<h2 class="subtitle"><em>Prolific anime studios prodction and rating</em></h2>
+<h2 class="subtitle"><em>Which Anime Studio Is The Best? An Examination Between 1958~2020</em></h2>
 <p class="author"><em>Halleyson Li</em></p>
-<p class="date"><em>2021-05-24</em></p>
+<p class="date"><em>2021-05-25</em></p>
 </div>
 <div id="overview" class="section level1 unnumbered">
 <h1>Overview</h1>
-<p><img src="sunrise.jpg" width="50%" style="display: block; margin: auto;" /></p>
-<p>Based on the data scraped from <em>anime-planet</em> on June 15, 2020.
-Uploaded by Alan Mathew on <a href="https://www.kaggle.com/alancmathew/anime-dataset">Kaggle</a>.</p>
-<p>The package requirement for this</p>
-<div id="project-motivation" class="section level2" number="0.1">
-<h2><span class="header-section-number">0.1</span> Project motivation</h2>
+<p>My growth is accompanied by Japanese animate. Some of them bring me joy, and others teach me new things about life. The photo below is Sunrise studios, which is one of the most famous, prolific, well known for creating top-quality anime, at the time, my favourite studio. <br>
+Like an ordinary anime fan, I always wanted to gain more information that is related to anime. In particular, I want to statistically find out that whether or not, when an animate was produced by certain studios, without looking at the contains, people could predict that it must be good. As such, I managed to find a data set that contains 14000+ anime entries to fulfil my curiosity.
+<img src="sunrise.jpg" width="50%" style="display: block; margin: auto;" /></p>
+<div id="data-origin" class="section level2" number="0.1">
+<h2><span class="header-section-number">0.1</span> Data Origin</h2>
+<p>This data is scraped from <em>Anime-planet</em> on June 15, 2020.<br>
+It was uploaded by Alan Mathew on <a href="https://www.kaggle.com/alancmathew/anime-dataset">Kaggle</a>.<br>
+<a href="https://www.anime-planet.com/">Anime-planet</a> is a website created and run by anime fans. Millions of users accessing
+the site per month, to stream legal anime or leaving the reviews.</p>
 </div>
 <div id="project-aims" class="section level2" number="0.2">
 <h2><span class="header-section-number">0.2</span> Project Aims</h2>
+<p>The aim of this project is to visually answer the question:<br>
+1. Do prolific anime studios generally indicate they are good at producing high quality anime? <br>
+2. Based on the name of the studios, can people use it to predict the quality of their output <br>
+3. Which is the best anime studio? <br>
+In order to answer those questions, I want to restrict my studio range to only the top 50 prolific studios, as they are more well known by the anime viewers. I want to first create a scatter plot of studios against their total amount of animate, with the size and colour of the dot represent total average rating of their work. This could give a general understanding on whether prolific means more people likes their work, resulted by higher average rating.
+Then I want to create a gganimate to visually see how each studio’s rating changes across the year, in order to gain more inside view of the studios I am interested with. At the same time, find out which studio have the consistence of making high quality anime.</p>
 </div>
-<div id="package-requirement" class="section level2" number="0.3">
-<h2><span class="header-section-number">0.3</span> Package requirement</h2>
+<div id="notes" class="section level2 unnumbered">
+<h2><em>Notes</em></h2>
+<ol style="list-style-type: decimal">
+<li>The GitHub repository for this project could access through <a href="https://github.com/halleyson/psy6422dataproject.git">here</a></li>
+<li>To edit my bookdown, please open the folder through open project in Rstudio.</li>
+<li>The photo of Sunrise studio was taken from <a href="https://youinjapan.net/otaku-places/gundam.php">here</a></li>
+</ol>
 
 </div>
 </div>
@@ -204,7 +223,7 @@ Uploaded by Alan Mathew on <a href="https://www.kaggle.com/alancmathew/anime-dat
         </div>
       </div>
 
-<a href="understanding-the-data.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="data-cleaning.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

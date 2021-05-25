@@ -1,6 +1,6 @@
 --- 
 title: "PSY6422 Project"
-subtitle: 'Prolific anime studios prodction and rating'
+subtitle: 'Which Anime Studio Is The Best? An Examination Between 1958~2020'
 author: "Halleyson Li"
 date: "`r Sys.Date()`"
 output:
@@ -17,32 +17,38 @@ knit: "bookdown::render_book"
 
 
 # Overview {-}
+
+My growth is accompanied by Japanese animate. Some of them bring me joy, and others teach me new things about life. The photo below is Sunrise studios, which is one of the most famous, prolific, well known for creating top-quality anime, at the time, my favourite studio. <br>
+Like an ordinary anime fan, I always wanted to gain more information that is related to anime. In particular, I want to statistically find out that whether or not, when an animate was produced by certain studios, without looking at the contains, people could predict that it must be good. As such, I managed to find a data set that contains 14000+ anime entries to fulfil my curiosity.
 ```{r, echo=FALSE, out.width="50%", fig.align = "center", message=FALSE}
+#Insert graph 
 library(here)
 Sunrisestudio <- here("sunrise.jpg")
 
 knitr::include_graphics(Sunrisestudio)
-
 ```
 
-Based on the data scraped from *anime-planet* on June 15, 2020.
-Uploaded by Alan Mathew on [Kaggle](https://www.kaggle.com/alancmathew/anime-dataset).
-
-The package requirement for this 
-
-## Project motivation
-
+## Data Origin
+This data is scraped from *Anime-planet* on June 15, 2020.<br>
+It was uploaded by Alan Mathew on [Kaggle](https://www.kaggle.com/alancmathew/anime-dataset).<br>
+[Anime-planet](https://www.anime-planet.com/) is a website created and run by anime fans. Millions of users accessing 
+the site per month, to stream legal anime or leaving the reviews.
 
 ## Project Aims
+The aim of this project is to visually answer the question:<br>
+1. Do prolific anime studios generally indicate they are good at producing high quality anime? <br>
+2. Based on the name of the studios, can people use it to predict the quality of their output <br>
+3. Which is the best anime studio? <br>
+In order to answer those questions, I want to restrict my studio range to only the top 50 prolific studios, as they are more well known by the anime viewers. I want to first create a scatter plot of studios against their total amount of animate, with the size and colour of the dot represent total average rating of their work. This could give a general understanding on whether prolific means more people likes their work, resulted by higher average rating. 
+Then I want to create a gganimate to visually see how each studio’s rating changes across the year, in order to gain more inside view of the studios I am interested with. At the same time, find out which studio have the consistence of making high quality anime.
 
 
 
-## Package requirement
+## *Notes*{-}
 
-
-
-
-
+1. The GitHub repository for this project could access through [here](https://github.com/halleyson/psy6422dataproject.git)
+2. To edit my bookdown, please open the folder through open project in Rstudio.
+3. The photo of Sunrise studio was taken from [here](https://youinjapan.net/otaku-places/gundam.php)
 
 
 

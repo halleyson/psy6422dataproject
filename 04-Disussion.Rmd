@@ -1,12 +1,10 @@
 # Discussion
 
-By looking at the graph 1
+In general, if an anime was produced by a top-rated studio, the average rating of their output never below 3 (out of 5)! There is a reason why people will have faith in some studios. Like Bones and Kyoto anime, their output average rating always in the top 4 by looking at figure 6. Considering their number of total productions is above mean, it really shows how the consistency of their anime quality. Of course, prolific anime studio does not indicate the consistency on quality, as they may have many projects at once, so they must sacrifice some of the output, to push the rating on their main projects, thus resulting in the fluctuation on their yearly average rating. However, by looking at figure 1, most of the prolific studios have an average rating above 3, do shows a big studio is a big studio, the output can be promised. <br>
+Based on the data, Bones studio, is the best anime studio, with their rating of the work barely below 3.5, indicate their unchanged anime quality since day 1. As an additional interesting fact, Full Metal Alchemist (2009) was produced by this studio, and it has been rated as the top 1 animate in almost all the anime streaming website, and never fall out of the top 5 list until now.
 
 
 
 
-
-## Further resaerch suggestion
-
-
-
+## Further work suggestion and thoughts
+There are many potentials for this data set, as for this project, it only used 4 columns of information. If I had more time, I really want to create a more reliable ranking plot that taken into account the number of votes and watched rate. Furthermore, to create a recommendation engine based on type and genre. But for that, I need to learn how to analyse words in R. 

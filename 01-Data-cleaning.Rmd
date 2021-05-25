@@ -3,78 +3,69 @@ output:
   pdf_document: default
   html_document: default
 ---
-# Understanding the data
+# Data cleaning
 
-First let us load the data, a quick way to do is simply click the raw data folder from the files section and import.
+## Importing the data
+
+First, let us load the data. A quick way to do is simply click the raw data folder from the files section at the bottom right 
+and then import.
 Another way is by code shows as below: 
 ```{r, message=FALSE}
 library(readr)
 anime <- read_csv("raw data/anime.csv")
-head(anime)
+#Quick check to see if the data have been successfully and correctly loaded. 
+head(anime, row = 5)
 ```
+\** For the meaning of each variable, please look at my codebook.txt*
+## Cleaning the data
 
 ```{r, message=FALSE, results='hide'}
 library(tidyverse)
 library(ggplot2)
-glimpse(anime)
 
-   
-summary(anime$votes)
-
-class(anime$votes)
-
-#change all [] to NA
+#change all [] from the raw data to NA
 is.na(anime) <- anime == "[]"
 
-#set new data frame to keep the original 
+#set new data frame to keep the original without contaminated
 anime1 <- anime
 
+#To find out the staring and ending year of the data
 summary(anime$startYr)
 
 #removing special character
 gsub("'", "", anime1$studios)
 gsub("\\[", "", anime1$studios)
-
 gsub("\\]", "", anime1$studios)
 
-
-#Froming a table of studio and the amount of production
+#Forming a table of the studios and the amount of their production
 studio <- aggregate(anime$studios, by = list(anime$studios), FUN = length)
+#Rename the column
 colnames(studio) <- c("studios", "production")
 
-#set Na to 0
+#Set all Na to 0, becasue the missing data is unpredictable
 anime1$rating[is.na(anime1$rating)] <- 0
-
 anime1$studios[is.na(anime1$studios)] <- 0
 
-# create overall average rating of each studio
-
+#Create overall average rating of each studio
 studiorate <- aggregate(anime1[, 17], list(anime1$studios), mean)
 colnames(studiorate) <- c("studios", "rating")
 
-
-#merge two table
+#merge two table 
 studioall <- merge(studio,studiorate, by = "studios", all = TRUE)
 
-#only keep top 50 production studios
+#Only select the top 50 studios based on the amount of total production
 library(data.table)
-
 #need this package to use piping
 library (dplyr)
-
 studiotop50 <- data.table(studioall, key = "production")
 studiotop50 <- studiotop50 %>% 
+#arrange the table to the decreasing trend
   arrange(desc(production)) %>% 
   slice (1:50)
 
-
 ```
 
-
-
-
-Since the first recorded studio starting at 1958, thus
-
+After achieving a table only contains top 50 studios with their total numbers of production, plus the overall average rating from 1958 to 2020, a graph could be plotted to visualise which is the most prolific studio and its rating.
 
 
 
@@ -95,4 +86,7 @@ Since the first recorded studio starting at 1958, thus
 
 
 
-With the use of R
+
+
+
+
